@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +28,13 @@ const Header = () => {
           "Sponsors",
           "Contacts",
         ].map((item) => (
-          <a key={item} href="#" className="hover:text-gray-300">
+          <Link
+            key={item}
+            to={item.toLowerCase()}
+            className="hover:text-gray-300"
+          >
             {item}
-          </a>
+          </Link>
         ))}
       </nav>
 
