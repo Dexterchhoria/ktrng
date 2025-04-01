@@ -1,20 +1,22 @@
-import "./App.css";
-// import Footer from "./common/Footer";
-import Header from "./common/Header";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
 import Home from "./pages/home/Home";
+import Gallery from "./pages/Gallery/Gallery";
+import Events from "./pages/events/Events";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div className="bg-black h-[100vh]">
-        <div>
-          <Header />
-        </div>
-        <Home />
-      </div>
-      {/* <Footer /> */}
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="home" index element={<Home />} />
+          <Route path="Gallery" element={<Gallery />} />
+          <Route path="events" element={<Events />} />
+        </Route>
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
