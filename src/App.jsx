@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/home/Home";
-import Gallery from "./pages/Gallery/Gallery";
+import Gallery from "./pages/gallery/Gallery";
 import Events from "./pages/events/Events";
 
 const App = () => {
