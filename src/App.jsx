@@ -1,16 +1,20 @@
-import './App.css'
+import "./App.css";
+// import Footer from "./common/Footer";
+import Header from "./common/Header";
+import Home from "./pages/home/Home";
 
 function App() {
- 
-
   return (
     <>
-      <div className="hero bg-black h-[100vh] w-[100vw] absolute">
-        <img className="relative h-[100%] w-[100%]" src="kaltarang.jpg" alt="" />
-
+      <div className="bg-black h-[100vh]">
+        <div>
+          <Header />
+        </div>
+        <Home />
       </div>
+      {/* <Footer /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
