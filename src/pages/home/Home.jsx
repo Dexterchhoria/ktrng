@@ -5,7 +5,7 @@ import Carousel from "./Carousel";
 import HomeGallery from "./HomeGallery";
 import JoinCommunity from "./JoinCommunity";
 import Faqs from "./Faqs";
-
+import "../../app.css"
 const Home = () => {
   return (
     <>
