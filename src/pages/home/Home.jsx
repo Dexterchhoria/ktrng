@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import bgImg from "../../assets/bgImg.jpg";
-import aboutImg from "../../assets/boy.jpeg";
+import bgImg from "../../assets/bgImg2.jpeg";
+import aboutImg from "../../assets/kaltaran.jpg";
 import Carousel from "./Carousel";
 import HomeGallery from "./HomeGallery";
 import JoinCommunity from "./JoinCommunity";
@@ -44,7 +44,7 @@ const Home = () => {
         className="h-screen flex text flex-col items-center justify-center text-white text-center relative bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
 
         <FadeInSection>
           <div className="relative text  inline-block text-center">

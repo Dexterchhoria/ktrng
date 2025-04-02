@@ -19,9 +19,13 @@ const Footer = () => {
               KALTARANG
             </span>
           </div>
-          <button className="mt-0 sm:mt-2 ml-12 sm:ml-16 bg-yellow-500 text text-black py-1 px-2  rounded font-bold">
-            REGISTER NOW
-          </button>
+
+          <a
+            href="#"
+            className="mt-0 sm:mt-2 ml-12 sm:ml-16 bg-yellow-500 text text-black py-1 px-2  rounded font-bold"
+          >
+            Register
+          </a>
         </div>
 
         <div className="w-full lg:w-1/4 mb-4 md:mb-0">

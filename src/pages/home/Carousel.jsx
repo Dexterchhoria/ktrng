@@ -22,11 +22,11 @@ const Carousel = () => {
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 2000,
+          delay: 1000,
           disableOnInteraction: false,
         }}
         navigation={true}
-        pagination={{ clickable: true, dynamicBullets: true }}
+        // pagination={{ clickable: true, dynamicBullets: true }}
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>

@@ -9,31 +9,30 @@ const Header = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  const navLinks = {
+    Home: "",
+    Events: "events",
+    Merchandise: "merchandise",
+    Schedule: "schedule",
+    Gallery: "gallery",
+    Sponsors: "sponsors",
+    Contacts: "contacts",
+  };
+
   return (
     <header className="absolute top-0 left-0 w-full flex justify-between items-center p-4 lg:px-12 text-white bg-black/10 border-b border-white/10 z-20">
       {/* Logo */}
-      <div className="flex items-center">
-        <img src={logo} alt="KALTARANG" className="h-16" />
-        <span className="text-2xl font-bold text">KALTARANG</span>
-      </div>
-
+      <Link to="">
+        <div className="flex items-center">
+          <img src={logo} alt="KALTARANG" className="h-16" />
+          <span className="text-2xl font-bold text">KALTARANG</span>
+        </div>
+      </Link>
       {/* Desktop Nav */}
       <nav className="hidden xl:flex gap-6 text-lg text uppercase">
-        {[
-          "Home",
-          "Events",
-          "Merchandise",
-          "Schedule",
-          "Gallery",
-          "Sponsors",
-          "Contacts",
-        ].map((item) => (
-          <Link
-            key={item}
-            to={item.toLowerCase()}
-            className="hover:text-gray-300"
-          >
-            {item}
+        {Object.entries(navLinks).map(([name, path]) => (
+          <Link key={name} to={`/${path}`} className="hover:text-gray-300">
+            {name}
           </Link>
         ))}
       </nav>
@@ -58,23 +57,15 @@ const Header = () => {
           isOpen ? "translate-x-0" : "translate-x-full"
         } xl:hidden`}
       >
-        {[
-          "Home",
-          "Events",
-          "Merchandise",
-          "Schedule",
-          "Gallery",
-          "Sponsors",
-          "Contacts",
-        ].map((item) => (
-          <a
-            key={item}
-            href="#"
+        {Object.entries(navLinks).map(([name, path]) => (
+          <Link
+            key={name}
+            to={`/${path}`}
             onClick={closeMenu}
             className="hover:text-gray-300"
           >
-            {item}
-          </a>
+            {name}
+          </Link>
         ))}
         <a
           href="#"
