@@ -94,10 +94,10 @@ const HomeGallery = () => {
       </div>
 
       <div className="flex justify-center mt-8 gap-6">
-        <button className="border-2 text border-white px-6 py-2 text-lg font-semibold hover:bg-white hover:text-black transition">
+        <button className="border-2 text text-base border-white px-6 py-2 md:text-lg font-semibold hover:bg-white hover:text-black transition">
           VIEW MORE
         </button>
-        <button className="border-2 text border-white px-6 py-2 text-lg font-semibold hover:bg-white hover:text-black transition">
+        <button className="border-2 text text-base border-white px-6 py-2 md:text-lg font-semibold hover:bg-white hover:text-black transition">
           BROCHURE
         </button>
       </div>
