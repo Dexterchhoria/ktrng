@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <header className="absolute top-0 left-0 w-full flex justify-between items-center p-2 sm:p-4 lg:px-12 text-white bg-black/90 sm:bg-black/10 border-b border-white/10 z-20">
+    <header className="absolute top-0 left-0 w-full flex justify-between items-center p-2 sm:p-4 lg:px-12 text-white bg-black/40 sm:bg-black/10 border-b border-white/10 z-20">
       {/* Logo */}
       <Link to="">
         <div className="flex items-center">
@@ -53,7 +53,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-90 text flex flex-col items-center justify-center gap-6 text-white text-xl uppercase transition-transform ${
+        className={`fixed inset-0 bg-black/80 bg-opacity-90 text flex flex-col items-center justify-center gap-6 text-white text-xl uppercase transition-transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } xl:hidden`}
       >
@@ -68,7 +68,8 @@ const Header = () => {
           </Link>
         ))}
         <a
-          href="#"
+          href="https://docs.google.com/forms/d/1zBTANV2TTpEjqfSpKjV50Nj9CX3jqF4q-G_MK00951Y/edit"
+          target="_blank"
           className="bg-yellow-500 text-black font-bold px-6 py-3 rounded hover:bg-yellow-600 text-lg"
         >
           Register

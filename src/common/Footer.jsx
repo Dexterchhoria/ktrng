@@ -23,7 +23,8 @@ const Footer = () => {
           </div>
 
           <a
-            href="#"
+            href="https://docs.google.com/forms/d/1zBTANV2TTpEjqfSpKjV50Nj9CX3jqF4q-G_MK00951Y/edit"
+            target="_blank"
             className="mt-0 sm:mt-2 ml-12 sm:ml-16 bg-yellow-500 text text-black py-1 px-2 rounded font-bold"
           >
             Register
