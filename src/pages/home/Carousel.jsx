@@ -6,10 +6,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import event1 from "../../assets/1.png";
-import event2 from "../../assets/8.png";
-import event3 from "../../assets/6.png";
-import event4 from "../../assets/bgImg.jpg";
+import event1 from "../../assets/pastEvents/pastE1.png";
+import event2 from "../../assets/pastEvents/pastE2.png";
+import event3 from "../../assets/pastEvents/pastE3.png";
+import event4 from "../../assets/pastEvents/pastE4.png";
 
 const images = [event1, event2, event3, event4];
 

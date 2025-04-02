@@ -22,7 +22,7 @@ const JoinCommunity = () => {
 
       {/* Join Button */}
       <a
-        href="https://wa.me/yourwhatsapplink"
+        href="https://whatsapp.com/channel/0029Vb0uF0lK0IBZB9vG2Q3f "
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center text gap-2 bg-green-500 text-black font-bold text-base md:text-lg px-6 py-3 rounded-full transition transform hover:scale-105 hover:bg-green-600"

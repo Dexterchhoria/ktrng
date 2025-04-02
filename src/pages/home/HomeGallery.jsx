@@ -10,6 +10,8 @@ import gallery9 from "../../assets/11.png";
 import gallery10 from "../../assets/11.png";
 import gallery11 from "../../assets/11.png";
 import galleryMain from "../../assets/8.png";
+import pdf from "../../assets/broucher.pdf";
+import { Link } from "react-router-dom";
 
 const HomeGallery = () => {
   return (
@@ -94,12 +96,21 @@ const HomeGallery = () => {
       </div>
 
       <div className="flex justify-center mt-8 gap-6">
-        <button className="border-2 text text-base border-white px-6 py-2 md:text-lg font-semibold hover:bg-white hover:text-black transition">
+        <Link
+          to="gallery"
+          className="border-2 text text-base border-white px-6 py-2 md:text-lg font-normal hover:bg-white hover:text-black transition"
+        >
           VIEW MORE
-        </button>
-        <button className="border-2 text text-base border-white px-6 py-2 md:text-lg font-semibold hover:bg-white hover:text-black transition">
+        </Link>
+        <a
+          href={pdf}
+          download="Brochure.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border-2 text text-base border-white px-6 py-2 md:text-lg font-normal hover:bg-white hover:text-black transition"
+        >
           BROCHURE
-        </button>
+        </a>
       </div>
     </section>
   );

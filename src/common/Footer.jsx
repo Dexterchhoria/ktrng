@@ -7,6 +7,8 @@ import {
   FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
+import pdf from "../assets/broucher.pdf";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -30,37 +32,54 @@ const Footer = () => {
 
         <div className="w-full lg:w-1/4 mb-4 md:mb-0">
           <h2 className="text-gray-400 font-semibold">Participate</h2>
-          <a href="#" className="block text-white hover:text-yellow-500">
+          <Link to="events" className="block text-white hover:text-yellow-500">
             Events Portal
-          </a>
-          <a href="#" className="block text-white hover:text-yellow-500">
+          </Link>
+          <a
+            href="https://whatsapp.com/channel/0029Vb0uF0lK0IBZB9vG2Q3f"
+            target="_blank"
+            className="block text-white hover:text-yellow-500"
+          >
             Join The Community
           </a>
         </div>
 
         <div className="w-full lg:w-1/4 mb-4 md:mb-0">
           <h2 className="text-gray-400 font-semibold">Explore More</h2>
-          <a href="#" className="block text-white hover:text-yellow-500">
+          <Link to="gallery" className="block text-white hover:text-yellow-500">
             Gallery
-          </a>
-          <a href="#" className="block text-white hover:text-yellow-500">
+          </Link>
+          <a
+            href={pdf}
+            download="Broucher.pdf"
+            className="block text-white hover:text-yellow-500"
+          >
             Brochure
           </a>
         </div>
 
         <div className="w-full lg:w-1/4">
           <h2 className="text-gray-400 font-semibold">Reach Out To Us</h2>
-          <a href="#" className="block text-white hover:text-yellow-500">
+          <Link
+            to="contacts"
+            className="block text-white hover:text-yellow-500"
+          >
             Have Any Queries?
-          </a>
-          <a href="#" className="block text-white hover:text-yellow-500">
+          </Link>
+          <Link
+            to="contacts"
+            className="block text-white hover:text-yellow-500"
+          >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
 
       <div className="flex justify-center space-x-4 mt-6">
-        <a href="https://www.instagram.com/kaltarang_rgipt" target="_blank">
+        <a
+          href="https://whatsapp.com/channel/0029Vb0uF0lK0IBZB9vG2Q3f "
+          target="_blank"
+        >
           <FaWhatsapp className="text-white text-2xl hover:text-yellow-500" />
         </a>
         <a href="https://www.instagram.com/kaltarang_rgipt" target="_blank">
