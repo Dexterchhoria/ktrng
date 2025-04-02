@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <header className="absolute top-0 left-0 w-full flex justify-between items-center p-4 lg:px-12 text-white bg-black/10 border-b border-white/10 z-20">
+    <header className="absolute top-0 left-0 w-full flex justify-between items-center p-2 sm:p-4 lg:px-12 text-white bg-black/90 sm:bg-black/10 border-b border-white/10 z-20">
       {/* Logo */}
       <Link to="">
         <div className="flex items-center">

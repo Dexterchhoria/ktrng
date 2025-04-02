@@ -24,7 +24,7 @@ const Footer = () => {
 
           <a
             href="#"
-            className="mt-0 sm:mt-2 ml-12 sm:ml-16 bg-yellow-500 text text-black py-1 px-2  rounded font-bold"
+            className="mt-0 sm:mt-2 ml-12 sm:ml-16 bg-yellow-500 text text-black py-1 px-2 rounded font-bold"
           >
             Register
           </a>
@@ -75,28 +75,33 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center space-x-4 mt-6">
-        <a
-          href="https://whatsapp.com/channel/0029Vb0uF0lK0IBZB9vG2Q3f "
-          target="_blank"
-        >
-          <FaWhatsapp className="text-white text-2xl hover:text-yellow-500" />
-        </a>
-        <a href="https://www.instagram.com/kaltarang_rgipt" target="_blank">
-          <FaInstagram className="text-white text-2xl hover:text-yellow-500" />
-        </a>
-        <a href="https://www.youtube.com/@kaltarang_RGIPT" target="_blank">
-          <FaYoutube className="text-white text-2xl hover:text-yellow-500" />
-        </a>
-        <a
-          href="https://www.linkedin.com/company/kaltarang-rgipt/"
-          target="_blank"
-        >
-          <FaLinkedin className="text-white text-2xl hover:text-yellow-500" />
-        </a>
-        <a href="https://www.facebook.com/kaltarang" target="_blank">
-          <FaFacebook className="text-white text-2xl hover:text-yellow-500" />
-        </a>
+      {/* Copyright & Made with Love Section */}
+      <div className="text-center flex md:flex-row flex-col gap-2 items-center justify-between mt-12 text-gray-400 text-sm">
+        <p>Made with ❤️ by Kaltarang Team.</p>
+        <div className="flex justify-center items-start space-x-4 ">
+          <a
+            href="https://whatsapp.com/channel/0029Vb0uF0lK0IBZB9vG2Q3f"
+            target="_blank"
+          >
+            <FaWhatsapp className="text-white text-2xl hover:text-yellow-500" />
+          </a>
+          <a href="https://www.instagram.com/kaltarang_rgipt/" target="_blank">
+            <FaInstagram className="text-white text-2xl hover:text-yellow-500" />
+          </a>
+          <a href="https://www.youtube.com/@kaltarang_RGIPT" target="_blank">
+            <FaYoutube className="text-white text-2xl hover:text-yellow-500" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/kaltarang-rgipt/"
+            target="_blank"
+          >
+            <FaLinkedin className="text-white text-2xl hover:text-yellow-500" />
+          </a>
+          <a href="https://www.facebook.com/kaltarang" target="_blank">
+            <FaFacebook className="text-white text-2xl hover:text-yellow-500" />
+          </a>
+        </div>
+        <p> All rights reserved.</p>
       </div>
     </footer>
   );
