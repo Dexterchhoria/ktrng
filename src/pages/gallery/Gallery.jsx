@@ -3,15 +3,12 @@ import bgImg from "../../assets/bgImg2.jpeg";
 import { AiOutlineDown } from "react-icons/ai";
 import gallery1 from "../../assets/1.png";
 import gallery2 from "../../assets/2.png";
-import gallery3 from "../../assets/3.png";
-import gallery4 from "../../assets/4.png";
-import gallery5 from "../../assets/5.png";
+
 import gallery6 from "../../assets/6.png";
 import gallery7 from "../../assets/7.png";
 import gallery9 from "../../assets/11.png";
 import gallery10 from "../../assets/11.png";
-import gallery11 from "../../assets/11.png";
-import galleryMain from "../../assets/8.png";
+
 import m1 from "../../assets/gallery/m1.png";
 import m2 from "../../assets/gallery/m2.png";
 import m3 from "../../assets/gallery/m3.png";
@@ -20,7 +17,7 @@ import s2 from "../../assets/gallery/s2.png";
 import s3 from "../../assets/gallery/s3.png";
 import s4 from "../../assets/gallery/s4.png";
 import s5 from "../../assets/gallery/s5.png";
-import s6 from "../../assets/gallery/s6.png";
+
 import r11 from "../../assets/gallery/r11.png";
 import r12 from "../../assets/gallery/r12.png";
 import r13 from "../../assets/gallery/r13.png";
@@ -213,14 +210,14 @@ const Gallery = () => {
           </div>
           <div className="col-span-1 h-[150px] group overflow-hidden rounded-lg">
             <img
-              src={gallery2}
+              src={gallery7}
               alt="Gallery 2"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
           </div>
           <div className="col-span-1 h-[150px] group overflow-hidden rounded-lg">
             <img
-              src={gallery10}
+              src={r23}
               alt="Gallery 3"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -242,7 +239,7 @@ const Gallery = () => {
           </div>
           <div className="col-span-1 h-[250px] group overflow-hidden rounded-lg">
             <img
-              src={s6}
+              src={r21}
               alt="Gallery 5"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
