@@ -1,15 +1,17 @@
 import React from "react";
 import gallery1 from "../../assets/1.png";
 import gallery2 from "../../assets/2.png";
-import gallery3 from "../../assets/3.png";
-import gallery4 from "../../assets/4.png";
-import gallery5 from "../../assets/5.png";
+import gallery3 from "../../assets/gallery/r33.png";
+import r32 from "../../assets/gallery/r32.png";
+import r31 from "../../assets/gallery/r31.png";
+
 import gallery6 from "../../assets/6.png";
 import gallery7 from "../../assets/7.png";
-import gallery9 from "../../assets/11.png";
-import gallery10 from "../../assets/11.png";
+
+import r21 from "../../assets/gallery/r21.png";
+import r11 from "../../assets/gallery/r11.png";
 import gallery11 from "../../assets/11.png";
-import galleryMain from "../../assets/8.png";
+
 import pdf from "../../assets/broucher.pdf";
 import { Link } from "react-router-dom";
 
@@ -30,14 +32,14 @@ const HomeGallery = () => {
         </div>
         <div className="col-span-1 h-[150px] group overflow-hidden rounded-lg">
           <img
-            src={gallery2}
+            src={gallery11}
             alt="Gallery 2"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
         <div className="col-span-1 h-[150px] group overflow-hidden rounded-lg">
           <img
-            src={gallery10}
+            src={gallery2}
             alt="Gallery 3"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
@@ -45,14 +47,14 @@ const HomeGallery = () => {
 
         <div className="col-span-1 h-[250px] group overflow-hidden rounded-lg">
           <img
-            src={gallery6}
+            src={r32}
             alt="Gallery 4"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
         <div className="col-span-2 h-[250px] group overflow-hidden rounded-lg">
           <img
-            src={galleryMain}
+            src={r21}
             alt="Main Gallery"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
@@ -81,14 +83,14 @@ const HomeGallery = () => {
         </div>
         <div className="col-span-1 h-[120px] group overflow-hidden rounded-lg">
           <img
-            src={gallery2}
+            src={r31}
             alt="Gallery 8"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
         <div className="col-span-1 h-[120px] group overflow-hidden rounded-lg">
           <img
-            src={gallery9}
+            src={r11}
             alt="Gallery 9"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
