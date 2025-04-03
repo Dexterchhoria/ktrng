@@ -31,21 +31,21 @@ const Gallery = () => {
   return (
     <div>
       <div
-        className="h-[100vh] flex flex-col text items-center justify-center text-white text-center relative bg-cover bg-center"
+        className="h-[60vh] md:h-[100vh] flex flex-col text items-center justify-center text-white text-center relative bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/30"></div>
 
         {/* Title */}
-        <div className="relative inline-block text-center">
-          <h1 className="text-5xl md:text-8xl font-bold drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] px-4 relative z-10">
+        <div className="relative inline-block pt-12 md:pt-0 text-center">
+          <h1 className="text-5xl md:text-8xl font-bold drop-shadow-[0_0_15px_rgba(0,0,0,0.8)] px-4 relative z-10">
             Gallery
           </h1>
         </div>
 
         {/* Scroll Down Indicator */}
-        <div className="absolute bottom-10 flex flex-col items-center animate-bounce">
+        <div className="absolute hidden md:flex bottom-10  flex-col items-center animate-bounce">
           <p className="text-lg md:text-xl text-white">Scroll down</p>
           <AiOutlineDown className="text-3xl text-white mt-2" />
         </div>

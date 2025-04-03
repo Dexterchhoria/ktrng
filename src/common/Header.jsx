@@ -38,7 +38,8 @@ const Header = () => {
       </nav>
 
       <a
-        href="#"
+        href="https://docs.google.com/forms/d/1zBTANV2TTpEjqfSpKjV50Nj9CX3jqF4q-G_MK00951Y/edit"
+        target="_blank"
         className="hidden xl:block bg-yellow-500 text text-black font-bold px-4 py-2 rounded hover:bg-yellow-600 text-sm"
       >
         Register

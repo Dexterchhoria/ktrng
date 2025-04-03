@@ -66,28 +66,28 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <div
-        className="h-screen flex text flex-col items-center justify-center text-white text-center relative bg-cover bg-center"
+        className="h-[90vh] md:h-[100vh] flex text flex-col items-center justify-center text-white text-center relative bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         <div className="absolute inset-0 bg-black/30"></div>
 
         <FadeInSection>
           <div className="relative text  inline-block text-center">
-            <span className="absolute -top-6 left-8 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] text-left text-lg md:text-2xl font-semibold">
+            <span className="absolute -top-6 left-8 drop-shadow-[0_0_15px_rgba(50,50,50,0.8)] text-left text-lg md:text-2xl font-semibold">
               10th Edition
             </span>
 
-            <h1 className="text-4xl md:text-8xl font-bold drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] px-4 relative z-10">
+            <h1 className="text-4xl md:text-8xl font-bold drop-shadow-[0_0_15px_rgba(10,10,10,0.8)] px-4 relative z-10">
               KALTARANG'25
             </h1>
 
-            <span className="absolute -bottom-10 text-osake right-6 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] text-xl md:text-3xl font-semibold">
+            <span className="absolute -bottom-10 text-osake right-6 drop-shadow-[0_0_15px_rgba(20,20,20,0.8)] text-xl md:text-3xl font-semibold">
               A Voxel Verse
             </span>
           </div>
 
           <div className="mt-20">
-            <h3 className="text-xl md:text-3xl font-bold animate-pulse drop-shadow-[0_0_25px_rgba(255,255,255,0.95)] px-4 relative z-10">
+            <h3 className="text-xl md:text-3xl font-bold  drop-shadow-[0_0_25px_rgba(0,0,0,0.95)] px-4 relative z-10">
               18th April - 20th April
             </h3>
           </div>
