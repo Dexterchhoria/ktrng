@@ -1,10 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules"; // Removed Navigation
 
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/css/pagination"; // Removed navigation CSS
 
 import event1 from "../../assets/pastEvents/pastE1.png";
 import event2 from "../../assets/pastEvents/pastE2.png";
@@ -17,7 +16,7 @@ const Carousel = () => {
   return (
     <div className="relative max-w-screen-lg mx-auto">
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Pagination, Autoplay]} // Removed Navigation module
         spaceBetween={10}
         slidesPerView={1}
         loop={true}
@@ -25,8 +24,8 @@ const Carousel = () => {
           delay: 1000,
           disableOnInteraction: false,
         }}
-        navigation={true}
-        // pagination={{ clickable: true, dynamicBullets: true }}
+        // navigation={true} ← Removed
+        // pagination={{ clickable: true, dynamicBullets: true }} ← Optional
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
