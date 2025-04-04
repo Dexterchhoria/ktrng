@@ -1,19 +1,111 @@
 import React from "react";
 import bgImg from "../../assets/bgImg2.jpeg";
 import { AiOutlineDown } from "react-icons/ai";
-import e1 from "../../assets/events/e1.png";
-import e2 from "../../assets/events/e2.png";
-import e3 from "../../assets/events/e3.png";
-import e4 from "../../assets/events/e4.png";
+import battleofbands from "../../assets/events/battleofbands(o).png";
+import classicaldance from "../../assets/events/classicaldance(r).png";
+import streetdance from "../../assets/events/streetdance(b).png";
+import beatbox from "../../assets/events/beatbox(o).png";
+import duetdance from "../../assets/events/duetdance(b).png";
+import groupdance from "../../assets/events/groupdance(g).png";
+import instrumental from "../../assets/events/instrumental(r).png";
+import mimeact from "../../assets/events/mimeact(b).png";
+import nukkad from "../../assets/events/nukkad(o).png";
+import rap from "../../assets/events/rap(r).png";
+import solodance from "../../assets/events/solodance(p).png";
+import solosinging from "../../assets/events/solosinging(g).png";
+import storytelling from "../../assets/events/storytelling(p).png";
+import icp from "../../assets/events/icp(p).png";
+import icq from "../../assets/events/icq(r).png";
+import jam from "../../assets/events/JAM(b).png";
+import stageact from "../../assets/events/stageact(g).png";
 
 const events = [
-  { img: e1, link: "https://unstop.com/event1", glow: "#ffd43b" },
-  { img: e2, link: "https://unstop.com/event2", glow: "#da77fe" },
-  { img: e3, link: "https://unstop.com/event3", glow: "#4dabf7" },
   {
-    img: e4,
-    link: "https://unstop.com/event4",
+    img: storytelling,
+    link: "https://unstop.com/o/jGic8w2?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#f783ac",
+  },
+  {
+    img: mimeact,
+    link: "https://unstop.com/o/aJm74Up?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#4dabf7",
+  },
+  {
+    img: solosinging,
+    link: "https://unstop.com/o/lpv2uk8?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#69db7c",
+  },
+  {
+    img: rap,
+    link: "https://unstop.com/o/t2oaXmi?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
     glow: "#ff8787",
+  },
+  {
+    img: nukkad,
+    link: "https://unstop.com/o/q0BEkcg?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#ffa94d",
+  },
+  {
+    img: classicaldance,
+    link: "https://unstop.com/o/VLb3Ike?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#ff8787",
+  },
+
+  {
+    img: duetdance,
+    link: "https://unstop.com/o/x0neMVW?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#4dabf7",
+  },
+  {
+    img: groupdance,
+    link: "https://unstop.com/o/I9tzU3X?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#69db7c",
+  },
+  {
+    img: instrumental,
+    link: "https://unstop.com/o/r4TRcZH?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#ff8787",
+  },
+
+  {
+    img: beatbox,
+    link: "https://unstop.com/o/xtdVkiU?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#ffa94d",
+  },
+  {
+    img: solodance,
+    link: "https://unstop.com/o/XWixFVA?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#f783ac",
+  },
+  {
+    img: streetdance,
+    link: "https://unstop.com/o/jbR4K6S?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#4dabf7",
+  },
+  {
+    img: battleofbands,
+    link: "https://unstop.com/o/cZyTpsU?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#ffa94d",
+  },
+  {
+    img: stageact,
+    link: "https://unstop.com/o/VgTjdhI?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#69db7c",
+  },
+  {
+    img: icq,
+    link: "https://unstop.com/o/0NH8Jv5?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#ff8787",
+  },
+  {
+    img: icp,
+    link: "https://unstop.com/o/XfYzi1H?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#f783ac",
+  },
+  {
+    img: jam,
+    link: "https://unstop.com/o/BIhyvDu?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#4dabf7",
   },
 ];
 
@@ -45,9 +137,9 @@ const Events = () => {
 
       {/* Events Section */}
       <section className="bg-black text-white py-16 px-6 md:px-16 text-center">
-        <h2 className="text-3xl md:text-4xl text font-semibold mb-10">
+        {/* <h2 className="text-3xl md:text-4xl text font-semibold mb-10">
           Upcoming Events
-        </h2>
+        </h2> */}
 
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
@@ -82,7 +174,7 @@ const Events = () => {
         </div>
       </section>
       {/* Competetions Section*/}
-      <section className="bg-black text-white py-16 px-6 md:px-16 text-center">
+      {/* <section className="bg-black text-white py-16 px-6 md:px-16 text-center">
         <h2 className="text-3xl md:text-4xl text font-semibold mb-10">
           Upcoming Competitions
         </h2>
@@ -114,7 +206,7 @@ const Events = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

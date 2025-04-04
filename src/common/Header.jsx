@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const location = useLocation();
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
@@ -30,11 +30,24 @@ const Header = () => {
       </Link>
       {/* Desktop Nav */}
       <nav className="hidden xl:flex gap-6 text-lg text uppercase">
-        {Object.entries(navLinks).map(([name, path]) => (
-          <Link key={name} to={`/${path}`} className="hover:text-gray-300">
-            {name}
-          </Link>
-        ))}
+        {Object.entries(navLinks).map(([name, path]) => {
+          const isActive =
+            location.pathname === `/${path}` ||
+            (path === "" && location.pathname === "/");
+          return (
+            <Link
+              key={name}
+              to={`/${path}`}
+              className={`${
+                isActive
+                  ? "text-yellow-400 font-semibold"
+                  : "text-white hover:text-gray-300"
+              }`}
+            >
+              {name}
+            </Link>
+          );
+        })}
       </nav>
 
       <a
@@ -58,16 +71,25 @@ const Header = () => {
           isOpen ? "translate-x-0" : "translate-x-full"
         } xl:hidden`}
       >
-        {Object.entries(navLinks).map(([name, path]) => (
-          <Link
-            key={name}
-            to={`/${path}`}
-            onClick={closeMenu}
-            className="hover:text-gray-300"
-          >
-            {name}
-          </Link>
-        ))}
+        {Object.entries(navLinks).map(([name, path]) => {
+          const isActive =
+            location.pathname === `/${path}` ||
+            (path === "" && location.pathname === "/");
+          return (
+            <Link
+              key={name}
+              to={`/${path}`}
+              onClick={closeMenu}
+              className={`${
+                isActive
+                  ? "text-yellow-400 font-semibold"
+                  : "text-white hover:text-gray-300"
+              }`}
+            >
+              {name}
+            </Link>
+          );
+        })}
         <a
           href="https://docs.google.com/forms/d/1zBTANV2TTpEjqfSpKjV50Nj9CX3jqF4q-G_MK00951Y/edit"
           target="_blank"

@@ -5,6 +5,7 @@ import Carousel from "./Carousel";
 import HomeGallery from "./HomeGallery";
 import JoinCommunity from "./JoinCommunity";
 import Faqs from "./Faqs";
+import { motion } from "framer-motion";
 
 const FadeInSection = ({ children }) => {
   const ref = useRef(null);
@@ -92,6 +93,7 @@ const Home = () => {
             </h3>
           </div>
         </FadeInSection>
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black"></div>
 
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black"></div>
       </div>
@@ -114,16 +116,22 @@ const Home = () => {
           <h2 className="text-4xl font-bold drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] text-center mb-4">
             About KALTARANG'25
           </h2>
-          <p className="text-gray-300">
-            Kaltarang is RGIPT's annual cultural fest, renowned for being a
+          <motion.p
+            className="text-gray-300 text-sm md:text-xl"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            Kaltarang is RGIPTs annual cultural fest, renowned for being a
             dynamic and immersive celebration of art, culture, and talent. Since
             its inception, Kaltarang has grown into a prestigious platform where
-            creativity meets competition. The 10th edition, Kaltarang'25,
+            creativity meets competition. The 10th edition, Kaltarang25,
             promises to be the grandest yet, bringing together students from
             across the country to experience a world where fantasy and tradition
             intertwine. With a diverse array of competitions, performances, and
             workshops, Kaltarang celebrates the spirit of youth and innovation.
-          </p>
+          </motion.p>
         </div>
 
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black"></div>
