@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { motion, stagger, useAnimate } from "motion/react";
 import { cn } from "../../lib/utils";
 
@@ -7,66 +7,83 @@ const TextGenerateEffect = ({
   words,
   className,
   filter = true,
-  duration = 0.5,
-  font = "pixel", // Add a font prop to control which font to use (PixelDigivolve or Osake)
-  loop = true, // Add loop prop to control looping behavior
+  duration = 1, // Increased default duration
+  font = "pixel",
+  loop = true,
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const animationRef = useRef(null);
+  let wordsArray = words.trim().split(/\s+/);
 
   useEffect(() => {
-    // If looping is enabled, animate the text repeatedly
+    // Define the animation sequence
     const animationSequence = async () => {
-      while (loop) {
-        await animate(
-          "span",
-          {
-            opacity: 1,
-            filter: filter ? "blur(0px)" : "none",
-          },
-          {
-            duration: duration ? duration : 1,
-            delay: stagger(0.08),
-          }
-        );
+      // Fade in all words
+      await animate(
+        "span",
+        {
+          opacity: 1,
+          filter: filter ? "blur(0px)" : "none",
+        },
+        {
+          duration: duration,
+          delay: stagger(0.08, { from: 0 }), // Specify starting point
+        }
+      );
 
-        // After one animation cycle, reverse it (or add any other desired behavior)
-        await animate(
-          "span",
-          {
-            opacity: 0,
-            filter: filter ? "blur(10px)" : "none",
-          },
-          {
-            duration: duration ? duration : 1,
-            delay: stagger(0.08),
-          }
-        );
+      // Pause before fading out (gives time to read)
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
+      // Fade out all words
+      await animate(
+        "span",
+        {
+          opacity: 0,
+          filter: filter ? "blur(10px)" : "none",
+        },
+        {
+          duration: duration,
+          delay: stagger(0.08, { from: 0 }), // Ensure same starting point
+        }
+      );
+
+      // Wait before next cycle
+      await new Promise((resolve) => setTimeout(resolve, 500));
+
+      // Schedule next animation cycle if looping
+      if (loop) {
+        animationRef.current = requestAnimationFrame(animationSequence);
       }
     };
 
-    // Call the animation function
-    animationSequence();
-  }, [scope.current, loop]);
+    // Start animation and store reference
+    animationRef.current = requestAnimationFrame(animationSequence);
+
+    // Cleanup function
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, [animate, duration, filter, loop]);
 
   const renderWords = () => {
     return (
       <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span
-              key={word + idx}
-              className={`opacity-0 ${
-                font === "pixel" ? "text PixelDigivolve" : "text-osake"
-              }`} // Conditional font class
-              style={{
-                filter: filter ? "blur(10px)" : "none",
-              }}
-            >
-              {word}{" "}
-            </motion.span>
-          );
-        })}
+        {wordsArray.map((word, idx) => (
+          <motion.span
+            key={`word-${idx}`} // More reliable key format
+            className={`${
+              font === "pixel" ? "text PixelDigivolve" : "text-osake"
+            }`}
+            style={{
+              opacity: 0, // Initial state through style
+              filter: filter ? "blur(10px)" : "none",
+            }}
+          >
+            {word}{" "}
+          </motion.span>
+        ))}
       </motion.div>
     );
   };
