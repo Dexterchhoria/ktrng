@@ -136,7 +136,7 @@ const Events = () => {
       </div>
 
       {/* Events Section */}
-      <section className="bg-black text-white py-16 px-6 md:px-16 text-center">
+      <section className="bg-black text-white py-16 px-10  md:px-16 text-center">
         {/* <h2 className="text-3xl md:text-4xl text font-semibold mb-10">
           Upcoming Events
         </h2> */}

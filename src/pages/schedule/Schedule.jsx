@@ -23,10 +23,14 @@ import stageact from "../../assets/events/stageact(g).png";
 
 const eventImages = {
   "Solo Dance (Round 1)": solodance,
+  "Solo Dance (Finale)": solodance,
   "Solo Singing (Round 1)": solosinging,
-  "Rap (Round 1)": rap,
+  "Solo Singing (Finale)": solosinging,
+  "Classical Singing": solosinging,
+  "Rap (Round1)": rap,
   "Rap (Finale)": rap,
   "Instrumental (Solo + Group)": instrumental,
+  Instrumental: instrumental,
   Beatboxing: beatbox,
   "Duet Dance": duetdance,
   "Group Dance": groupdance,
@@ -37,8 +41,8 @@ const eventImages = {
   "Battle of Bands": battleofbands,
   "Stage Act": stageact,
   "Story Telling": storytelling,
-  "ICP (Indian Choreo Project)": icp,
-  "ICQ (Indian Choreo Quiz)": icq,
+  "Indian Culture Painting Competition": icp,
+  "Indian Culture Quiz": icq,
   "JAM (Just A Minute)": jam,
 };
 
@@ -50,7 +54,7 @@ const scheduleData = {
       venue: "Vivekanand Sabhagar",
     },
     {
-      event: "Beatboxing",
+      event: "Beat box",
       time: "10:00 AM – 11:30 AM",
       venue: "RG Plaza",
     },
@@ -70,84 +74,113 @@ const scheduleData = {
       venue: "Academic Block",
     },
     {
+      event: "Street Dance",
+      time: "3:30 PM – 5:30 PM",
+      venue: "RG Plaza",
+    },
+    {
+      event: "Battle of Bands",
+      time: "4:00 PM – 6:30 PM",
+      venue: "Stage-3",
+    },
+    {
       event: "JAM (Just A Minute)",
       time: "4:30 PM – 6:30 PM",
       venue: "Academic Block",
     },
     {
-      event: "Rap (Round 1)",
-      time: "5:00 PM – 7:00 PM",
+      event: "Mono Act",
+      time: "4:30 PM – 6:30 PM",
       venue: "Vivekanand Sabhagar",
     },
   ],
   "Day 2": [
+    {
+      event: "Classical Singing",
+      time: "9:00 AM – 11:00 AM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Hindi Poetry",
+      time: "9:00 AM – 11:00 AM",
+      venue: "RG Plaza",
+    },
+    {
+      event: "Solo Dance (Finale)",
+      time: "11:30 AM – 1:00 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Debate",
+      time: "1:30 PM – 5:00 PM",
+      venue: "Academic Block",
+    },
+    {
+      event: "Indian Culture Painting Competition",
+      time: "12:00 PM – 4:00 PM",
+      venue: "Academic Block",
+    },
+    {
+      event: "Instrumental",
+      time: "1:30 PM – 3:00 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Solo Singing (Finale)",
+      time: "03:00 PM – 4:30 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Rap (Round1)",
+      time: "5:00 AM – 7:00 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Indian Culture Quiz",
+      time: "4:30 PM – 6:00 PM",
+      venue: "Academic Block",
+    },
+    {
+      event: "Group Dance",
+      time: "4:30 PM – 7:00 PM",
+      venue: "Stage 3",
+    },
+    {
+      event: "PRONITE 2",
+      time: "5:00 PM – 12:00 AM",
+      venue: "Pronite Ground",
+    },
+  ],
+  "Day 3": [
+    {
+      event: "Stage Play",
+      time: "10:00 AM – 1:00 PM",
+      venue: "Stage 3",
+    },
+    {
+      event: "Classical Dance",
+      time: "10:00 AM – 12:00 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Duet Dance",
+      time: "12:30 PM – 3:00 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Mime Act",
+      time: "3:30 PM – 5:00 PM",
+      venue: "Vivekanand Sabhagar",
+    },
     {
       event: "Rap (Finale)",
       time: "3:30 PM – 5:00 PM",
       venue: "Stage 3",
     },
     {
-      event: "Instrumental (Solo + Group)",
-      time: "12:00 PM – 3:00 PM",
-      venue: "Rangshala",
-    },
-    {
-      event: "Beatboxing",
-      time: "5:00 PM – 6:00 PM",
-      venue: "Rangshala",
-    },
-    {
-      event: "Duet Dance",
-      time: "10:00 AM – 12:00 PM",
-      venue: "Vivekanand Sabhagar",
-    },
-    {
-      event: "Group Dance",
-      time: "12:30 PM – 3:00 PM",
-      venue: "Vivekanand Sabhagar",
-    },
-  ],
-  "Day 3": [
-    {
-      event: "Classical Dance",
-      time: "10:00 AM – 11:30 AM",
-      venue: "Vivekanand Sabhagar",
-    },
-    {
-      event: "Mime Act",
-      time: "12:00 PM – 1:30 PM",
-      venue: "Vivekanand Sabhagar",
-    },
-    {
-      event: "Nukkad Natak",
-      time: "2:00 PM – 4:00 PM",
-      venue: "Rangmanch (Open Air Theatre)",
-    },
-    {
-      event: "Street Dance",
+      event: "Mr And Mrs Kaltarang",
       time: "5:00 PM – 7:00 PM",
-      venue: "Main Stage",
-    },
-    {
-      event: "Battle of Bands",
-      time: "10:00 AM – 12:30 PM",
-      venue: "Main Stage",
-    },
-    {
-      event: "Stage Act",
-      time: "1:00 PM – 2:30 PM",
-      venue: "Vivekanand Sabhagar",
-    },
-
-    {
-      event: "ICP (Indian Choreo Project)",
-      time: "4:30 PM – 6:00 PM",
-      venue: "Main Stage",
-    },
-    {
-      event: "ICQ (Indian Choreo Quiz)",
-      time: "6:30 PM – 7:30 PM",
-      venue: "Main Stage",
+      venue: "Pronite Ground",
     },
   ],
 };
@@ -168,7 +201,7 @@ const Schedule = () => {
         <div className="absolute inset-0 bg-black/30"></div>
 
         <div className="relative z-10">
-          <h1 className="text-4xl text pt-12 md:pt-0 md:text-7xl font-bold drop-shadow-[0_0_15px_rgba(0,0,0,0.8)] px-4">
+          <h1 className="text-4xl text pt-12 md:pt-0 md:text-8xl font-bold drop-shadow-[0_0_15px_rgba(0,0,0,0.8)] px-4">
             Schedule
           </h1>
         </div>
