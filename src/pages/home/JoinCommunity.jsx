@@ -15,14 +15,14 @@ const JoinCommunity = () => {
       </h3> */}
 
       {/* Description */}
-      {/* <p className="max-w-2xl mx-auto text text-gray-300 mb-6 text-lg">
+      <p className="max-w-2xl mx-auto text text-gray-300 mb-6 text-lg">
         Be a part of the most electrifying cultural festival! Connect, share,
         and enjoy the vibe of Kaltarang with exclusive updates,
         behind-the-scenes content, and special announcements.
-      </p> */}
-      <p className="max-w-2xl mx-auto text text-gray-300 mb-6 text-lg">
-        {TextGenerateEffectDemo()}
       </p>
+      {/* <p className="max-w-2xl mx-auto text text-gray-300 mb-6 text-lg">
+        {TextGenerateEffectDemo()}
+      </p> */}
 
       {/* Join Button */}
       <a
