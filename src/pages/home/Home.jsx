@@ -143,12 +143,12 @@ const Home = () => {
       {/* Discover More / Carousel Section */}
       <section className="bg-black text text-white py-16 px-6 md:px-16">
         <FadeInSection>
-          {/* <h2 className="text-4xl font-bold drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] text-center mb-8">
-            DISCOVER MORE
-          </h2> */}
           <h2 className="text-4xl font-bold drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] text-center mb-8">
-            {FlipWordsDemo()}
+            DISCOVER MORE
           </h2>
+          {/* <h2 className="text-4xl font-bold drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] text-center mb-8">
+            {FlipWordsDemo()}
+          </h2> */}
           <p className="text-center text-xl italic text-gray-300 mb-8">
             Past Events
           </p>
