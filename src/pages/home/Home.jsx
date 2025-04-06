@@ -118,7 +118,7 @@ const Home = () => {
           <h2 className="text-4xl font-bold drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] text-center mb-4">
             About KALTARANG'25
           </h2>
-          {/* <motion.p
+          <motion.p
             className="text-gray-300 text-sm md:text-xl"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -133,8 +133,8 @@ const Home = () => {
             across the country to experience a world where fantasy and tradition
             intertwine. With a diverse array of competitions, performances, and
             workshops, Kaltarang celebrates the spirit of youth and innovation.
-          </motion.p> */}
-          <p>{TextGenerateEffectDemo()}</p>
+          </motion.p>
+          {/* <p>{TextGenerateEffectDemo()}</p> */}
         </div>
 
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black"></div>

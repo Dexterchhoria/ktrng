@@ -31,7 +31,7 @@ const eventImages = {
   "Rap (Finale)": rap,
   "Instrumental (Solo + Group)": instrumental,
   Instrumental: instrumental,
-  Beatboxing: beatbox,
+  "Beat box": beatbox,
   "Duet Dance": duetdance,
   "Group Dance": groupdance,
   "Classical Dance": classicaldance,
