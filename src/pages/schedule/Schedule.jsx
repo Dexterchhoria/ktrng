@@ -20,8 +20,18 @@ import icp from "../../assets/events/icp(p).png";
 import icq from "../../assets/events/icq(r).png";
 import jam from "../../assets/events/JAM(b).png";
 import stageact from "../../assets/events/stageact(g).png";
+import debate from "../../assets/events/debate(o).png";
+import fashion from "../../assets/events/fashion(o).png";
+import hindiPoetry from "../../assets/events/hindiPoetry(p).png";
+import poetryslam from "../../assets/events/poetryslam(g).png";
+import mrandms from "../../assets/events/mrandmskaltarang(r).png";
 
 const eventImages = {
+  "Stage Play": fashion,
+  "Poetry Slam": poetryslam,
+  "Mr And Mrs Kaltarang": mrandms,
+  "Hindi Poetry": hindiPoetry,
+  Debate: debate,
   "Solo Dance (Round 1)": solodance,
   "Solo Dance (Finale)": solodance,
   "Solo Singing (Round 1)": solosinging,
@@ -64,6 +74,11 @@ const scheduleData = {
       venue: "RG Plaza",
     },
     {
+      event: "Poetry Slam",
+      time: "12:00 PM – 2:00 PM",
+      venue: "Academic Block",
+    },
+    {
       event: "Solo Singing (Round 1)",
       time: "12:30 PM – 3:00 PM",
       venue: "Vivekanand Sabhagar",
@@ -92,6 +107,11 @@ const scheduleData = {
       event: "Mono Act",
       time: "4:30 PM – 6:30 PM",
       venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "OPENING CEREMONY + Pronite 1",
+      time: "6:30 PM – 12:00 AM",
+      venue: "Pronite Ground",
     },
   ],
   "Day 2": [

@@ -18,8 +18,17 @@ import icp from "../../assets/events/icp(p).png";
 import icq from "../../assets/events/icq(r).png";
 import jam from "../../assets/events/JAM(b).png";
 import stageact from "../../assets/events/stageact(g).png";
-
+import debate from "../../assets/events/debate(o).png";
+import fashion from "../../assets/events/fashion(o).png";
+import hindiPoetry from "../../assets/events/hindiPoetry(p).png";
+import poetryslam from "../../assets/events/poetryslam(g).png";
+import mrandms from "../../assets/events/mrandmskaltarang(r).png";
 const events = [
+  {
+    img: debate,
+    link: "https://unstop.com/o/ILqmZ6V?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#ffa94d",
+  },
   {
     img: storytelling,
     link: "https://unstop.com/o/jGic8w2?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
@@ -29,6 +38,11 @@ const events = [
     img: mimeact,
     link: "https://unstop.com/o/aJm74Up?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
     glow: "#4dabf7",
+  },
+  {
+    img: fashion,
+    link: "https://unstop.com/o/mdEXtfu?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#ffa94d",
   },
   {
     img: solosinging,
@@ -44,6 +58,12 @@ const events = [
     img: nukkad,
     link: "https://unstop.com/o/q0BEkcg?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
     glow: "#ffa94d",
+  },
+
+  {
+    img: hindiPoetry,
+    link: "https://unstop.com/o/XDviPEj?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#f783ac",
   },
   {
     img: classicaldance,
@@ -73,9 +93,19 @@ const events = [
     glow: "#ffa94d",
   },
   {
+    img: poetryslam,
+    link: "https://unstop.com/o/z03Zcn7?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#69db7c",
+  },
+  {
     img: solodance,
     link: "https://unstop.com/o/XWixFVA?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
     glow: "#f783ac",
+  },
+  {
+    img: mrandms,
+    link: "https://unstop.com/o/83O9ESP?lb=A6l51Bb&utm_medium=Share&utm_source=shortUrl",
+    glow: "#ff8787",
   },
   {
     img: streetdance,
