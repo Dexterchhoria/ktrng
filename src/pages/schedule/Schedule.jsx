@@ -70,7 +70,7 @@ const scheduleData = {
     },
     {
       event: "Nukkad Natak",
-      time: "12:00 PM – 3:00 PM",
+      time: "12:00 PM - 3:00 PM",
       venue: "RG Plaza",
     },
     {
