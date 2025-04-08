@@ -22,7 +22,7 @@ import jam from "../../assets/events/JAM(b).png";
 import stageact from "../../assets/events/stageact(g).png";
 import debate from "../../assets/events/debate(o).png";
 import fashion from "../../assets/events/fashion(o).png";
-import hindiPoetry from "../../assets/events/hindiPoetry(p).png";
+import hindiPoetry from "../../assets/events/hindipoetry(p).png";
 import poetryslam from "../../assets/events/poetryslam(g).png";
 import mrandms from "../../assets/events/mrandmskaltarang(r).png";
 
