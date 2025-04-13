@@ -7,6 +7,19 @@ import { AiOutlineDown } from "react-icons/ai";
 // Team Data
 const teams = [
   {
+    title: "Editorial Team",
+    members: [
+      {
+        Name: "Alekhya",
+        Role: "Editorial Head",
+        Img: "",
+        LinkedIn:
+          "https://www.linkedin.com/in/alekhya-gudibandla-3571b5256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        pH: "",
+      },
+    ],
+  },
+  {
     title: "Technical Team",
     members: [
       {
@@ -14,36 +27,14 @@ const teams = [
         role: "Frontend Developer",
         img: c1,
         linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
       },
       {
-        name: "Aakarsh Verma",
-        role: "Frontend Developer",
-        img: c1,
-        linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
-      },
-      {
-        name: "Aakarsh Verma",
-        role: "Frontend Developer",
-        img: c1,
-        linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
-      },
-      {
-        name: "Aakarsh Verma",
-        role: "Frontend Developer",
-        img: c1,
-        linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
+        Name: "Yash Verma",
+        Role: "Technical Head",
+        img: "",
+        LinkedIn:
+          "https://www.linkedin.com/in/yash-verma-32535a310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        pH: "9511459189",
       },
     ],
   },
@@ -51,40 +42,20 @@ const teams = [
     title: "Sponsorship Team",
     members: [
       {
-        name: "Aakarsh Verma",
-        role: "Frontend Developer",
-        img: c1,
-        linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
+        Name: "Akshat",
+        Role: "Sponsorship Head",
+        Img: "",
+        LinkedIn:
+          "https://www.linkedin.com/in/akshat-s-271434182?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        pH: "",
       },
       {
-        name: "Aakarsh Verma",
-        role: "Frontend Developer",
-        img: c1,
-        linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
-      },
-      {
-        name: "Aakarsh Verma",
-        role: "Frontend Developer",
-        img: c1,
-        linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
-      },
-      {
-        name: "Aakarsh Verma",
-        role: "Frontend Developer",
-        img: c1,
-        linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
+        Name: "Pratyush Tiwari",
+        Role: "Sponsorship Head",
+        Img: "",
+        LinkedIn:
+          "https://www.linkedin.com/in/ipratyushtiwari?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        pH: "",
       },
     ],
   },
@@ -100,32 +71,52 @@ const teams = [
         instagram: "https://instagram.com/aakarsh_verma",
         github: "https://github.com/aakarsh-verma",
       },
+    ],
+  },
+  {
+    title: "Literary Team",
+    members: [
       {
-        name: "Aakarsh Verma",
-        role: "Frontend Developer",
-        img: c1,
-        linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
+        Name: "Vaibhav",
+        Role: "Literary Head",
+        Img: "",
+        LinkedIn:
+          "https://www.linkedin.com/in/vaibhavrgipt?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        pH: "9956316310",
       },
       {
-        name: "Aakarsh Verma",
-        role: "Frontend Developer",
-        img: c1,
-        linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
+        Name: "Anshita Singh",
+        Role: "Literary Head",
+        Img: "",
+        LinkedIn:
+          "https://www.linkedin.com/in/anshita-singh-089522283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        pH: "8756795382",
       },
+    ],
+  },
+  {
+    title: "Social Media Team",
+    members: [
       {
-        name: "Aakarsh Verma",
-        role: "Frontend Developer",
-        img: c1,
-        linkedin: "https://www.linkedin.com/in/aakarsh-verma",
-        twitter: "https://twitter.com/aakarsh_verma",
-        instagram: "https://instagram.com/aakarsh_verma",
-        github: "https://github.com/aakarsh-verma",
+        Name: "Aditya Verma",
+        Role: "Social Media Head",
+        Img: "",
+        LinkedIn:
+          "https://www.linkedin.com/in/aditya-verma-67babb287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        pH: "9007970257",
+      },
+    ],
+  },
+  {
+    title: "Outreach Team",
+    members: [
+      {
+        Name: "Ayushi Dwivedi",
+        Role: "Outreach Head",
+        Img: "",
+        LinkedIn:
+          "https://www.linkedin.com/in/ayushi-dwivedi-0a3058286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        pH: "9451465424",
       },
     ],
   },
