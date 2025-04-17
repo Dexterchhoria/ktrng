@@ -2,10 +2,12 @@ import React from "react";
 import bgImg from "../../assets/bgImg2.jpeg";
 import { FaLinkedin, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 import c1 from "../../assets/contacts/c1.jpeg";
+import akshat from "../../assets/contacts/akshat.jpeg";
 import { FaXTwitter } from "react-icons/fa6";
 import niharika from "../../assets/contacts/niharika.jpg";
 import utsav from "../../assets/contacts/utsav.png";
 import anmol from "../../assets/contacts/anmol.jpg";
+import pt from "../../assets/contacts/pt.jpg";
 import chh from "../../assets/contacts/chh.jpg";
 import yv from "../../assets/contacts/yv.jpg";
 import sneha from "../../assets/contacts/sneha.jpg";
@@ -77,7 +79,7 @@ const teams = [
       {
         name: "Akshat",
         role: "Sponsorship Head",
-        img: "",
+        img: akshat,
         linkedin: "https://www.linkedin.com/in/akshat-s-271434182",
       },
       {
@@ -89,7 +91,7 @@ const teams = [
       {
         name: "Pratyush Tiwari",
         role: "Sponsorship Head",
-        img: "",
+        img: pt,
         linkedin: "https://www.linkedin.com/in/ipratyushtiwari",
       },
     ],
