@@ -43,7 +43,8 @@ const eventImages = {
   Instrumental: instrumental,
   "Beat box": beatbox,
   "Duet Dance": duetdance,
-  "Group Dance": groupdance,
+  "Group Dance (Finale)": groupdance,
+  "Group Dance (Round 1)": groupdance,
   "Classical Dance": classicaldance,
   "Mime Act": mimeact,
   "Nukkad Natak": nukkad,
@@ -60,64 +61,60 @@ const scheduleData = {
   "Day 1": [
     {
       event: "Solo Dance (Round 1)",
-      time: "9:00 AM – 12:00 PM",
+      time: "9:00 AM – 10:30 AM",
       venue: "Vivekanand Sabhagar",
-    },
-    {
-      event: "Beat box",
-      time: "10:00 AM – 11:30 AM",
-      venue: "RG Plaza",
-    },
-    {
-      event: "Nukkad Natak",
-      time: "12:00 PM - 3:00 PM",
-      venue: "RG Plaza",
-    },
-    {
-      event: "Poetry Slam",
-      time: "12:00 PM – 2:00 PM",
-      venue: "Academic Block",
-    },
-    {
-      event: "Solo Singing (Round 1)",
-      time: "12:30 PM – 3:00 PM",
-      venue: "Vivekanand Sabhagar",
-    },
-    {
-      event: "Story Telling",
-      time: "2:30 PM – 4:00 PM",
-      venue: "Academic Block",
-    },
-    {
-      event: "Street Dance",
-      time: "3:30 PM – 5:30 PM",
-      venue: "RG Plaza",
-    },
-    {
-      event: "Battle of Bands",
-      time: "4:00 PM – 6:30 PM",
-      venue: "Stage-3",
-    },
-    {
-      event: "JAM (Just A Minute)",
-      time: "4:30 PM – 6:30 PM",
-      venue: "Academic Block",
     },
     {
       event: "Mono Act",
-      time: "4:30 PM – 6:30 PM",
+      time: "11:00 AM – 12:30 PM",
       venue: "Vivekanand Sabhagar",
     },
     {
-      event: "OPENING CEREMONY + Pronite 1",
-      time: "6:30 PM – 12:00 AM",
+      event: "Debate",
+      time: "12:30 PM – 2:00 PM",
+      venue: "AB1 LR1",
+    },
+    {
+      event: "Solo Singing (Round 1)",
+      time: "1:00 PM – 3:00 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Group Dance (Round 1)",
+      time: "1:00 PM – 2:30 PM",
+      venue: "Pronight Ground",
+    },
+    {
+      event: "Street Dance",
+      time: "3:00 PM – 4:30 PM",
+      venue: "RG Plaza",
+    },
+    {
+      event: "Mime Act",
+      time: "3:30 PM – 5:00 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+
+    {
+      event: "OPENING CEREMONY",
+      time: "5:00 PM – 6:00 PM",
+      venue: "Pronite Ground",
+    },
+    {
+      event: "Battle of Bands",
+      time: "6:00 PM – 8:00 PM",
+      venue: "Pronite Ground",
+    },
+    {
+      event: "Pronight 1",
+      time: "9:00 PM – 12:00 AM",
       venue: "Pronite Ground",
     },
   ],
   "Day 2": [
     {
       event: "Classical Singing",
-      time: "9:00 AM – 11:00 AM",
+      time: "9:00 AM – 10:30 AM",
       venue: "Vivekanand Sabhagar",
     },
     {
@@ -126,80 +123,98 @@ const scheduleData = {
       venue: "RG Plaza",
     },
     {
+      event: "Poetry Slam",
+      time: "11:00 AM – 1:00 PM",
+      venue: "RG Plaza",
+    },
+    {
       event: "Solo Dance (Finale)",
-      time: "11:30 AM – 1:00 PM",
-      venue: "Vivekanand Sabhagar",
-    },
-    {
-      event: "Debate",
-      time: "1:30 PM – 5:00 PM",
-      venue: "Academic Block",
-    },
-    {
-      event: "Indian Culture Painting Competition",
-      time: "12:00 PM – 4:00 PM",
-      venue: "Academic Block",
-    },
-    {
-      event: "Instrumental",
-      time: "1:30 PM – 3:00 PM",
-      venue: "Vivekanand Sabhagar",
-    },
-    {
-      event: "Solo Singing (Finale)",
-      time: "03:00 PM – 4:30 PM",
+      time: "11:00 AM – 12:00 PM",
       venue: "Vivekanand Sabhagar",
     },
     {
       event: "Rap (Round1)",
-      time: "5:00 AM – 7:00 PM",
+      time: "12:30 PM – 1:30 PM",
       venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Indian Culture Painting Competition",
+      time: "1:00 PM – 4:00 PM",
+      venue: "AB1 LR3",
+    },
+    {
+      event: "Solo Singing (Finale)",
+      time: "02:00 PM – 3:30 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Instrumental",
+      time: "4:00 PM – 5:30 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "Nukkad Natak",
+      time: "3:00 PM - 5:00 PM",
+      venue: "RG Plaza",
     },
     {
       event: "Indian Culture Quiz",
       time: "4:30 PM – 6:00 PM",
-      venue: "Academic Block",
+      venue: "AB1 LR3",
     },
     {
-      event: "Group Dance",
-      time: "4:30 PM – 7:00 PM",
-      venue: "Stage 3",
+      event: "Group Dance (Finale)",
+      time: "5:00 PM – 6:30 PM",
+      venue: "Pronight Ground",
     },
     {
-      event: "PRONITE 2",
-      time: "5:00 PM – 12:00 AM",
+      event: "Pronight 2",
+      time: "8:30 PM – 12:00 AM",
       venue: "Pronite Ground",
     },
   ],
   "Day 3": [
     {
-      event: "Stage Play",
-      time: "10:00 AM – 1:00 PM",
-      venue: "Stage 3",
-    },
-    {
       event: "Classical Dance",
-      time: "10:00 AM – 12:00 PM",
+      time: "9:00 AM – 11:00 AM",
       venue: "Vivekanand Sabhagar",
     },
+    {
+      event: "Story Telling",
+      time: "10:00 AM – 11:30 AM",
+      venue: "AB 1 LR1",
+    },
+
+    {
+      event: "Stage Play",
+      time: "11:30 AM – 2:00 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+    {
+      event: "JAM (Just A Minute)",
+      time: "2:00 PM – 3:30 PM",
+      venue: "Vivekanand Sabhagar",
+    },
+
     {
       event: "Duet Dance",
-      time: "12:30 PM – 3:00 PM",
+      time: "2:30 PM – 4:00 PM",
       venue: "Vivekanand Sabhagar",
     },
-    {
-      event: "Mime Act",
-      time: "3:30 PM – 5:00 PM",
-      venue: "Vivekanand Sabhagar",
-    },
+
     {
       event: "Rap (Finale)",
-      time: "3:30 PM – 5:00 PM",
-      venue: "Stage 3",
+      time: "4:15 PM – 5:15 PM",
+      venue: "Vivekanand Sabhagar",
     },
     {
       event: "Mr And Mrs Kaltarang",
-      time: "5:00 PM – 7:00 PM",
+      time: "5:30 PM – 7:30 PM",
+      venue: "Pronite Ground",
+    },
+    {
+      event: "Pronight 3",
+      time: "8:00 PM – 12:00 AM",
       venue: "Pronite Ground",
     },
   ],
